@@ -39,16 +39,6 @@
     width: 75px;
   }
 }
-@media (max-width: 991px) {
-  .top-header .info :is(p:first-child, p:nth-child(2)) {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
-  .top-header .info :is(p:first-child, p:nth-child(2)) {
-    display: none;
-  }
-}
 @media (max-width: 767px) {
   .top-header .info img {
     height: 18px;

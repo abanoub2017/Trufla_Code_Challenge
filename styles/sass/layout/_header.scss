@@ -12,14 +12,14 @@
         }
     }
 
-    .info :is(p:first-child, p:nth-child(2)) {
-        @include maxTablet {
-            display: none;
-        }
-        @include maxMobile {
-            display: none;
-        }
-    }
+    // .info :is(p:first-child, p:nth-child(2)) {
+    //     @include maxTablet {
+    //         display: none;
+    //     }
+    //     @include maxMobile {
+    //         display: none;
+    //     }
+    // }
 
     .info {
         img {
