@@ -1,4 +1,3 @@
-
 // Wellcome
 .wellcome{
     background: url(../../images/slider-img.jpg) no-repeat center center ;
@@ -122,6 +121,102 @@
             @include maxMobile {
                 padding-left:18px;
             }      
+        }
+    }
+}
+
+// FQA
+.fqa{
+    padding-left: 156px;
+    padding-right: 156px;
+    @include maxTablet {
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+    @include maxMobile {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .content-one{
+        margin-top: 79px;
+        margin-bottom: 91px;
+        @include maxMobile{
+            margin-top: 50px;
+            margin-bottom: 71px;
+        }
+        .title{
+            @include text($SecColor, 38px , Roboto, 0 , 48px , bold);
+            margin: 0;
+            @include maxTablet {
+                font-size: 30px;
+            }
+            @include maxMobile {
+                font-size: 28px;
+            }
+        }
+        .body{
+            @include text($blackColor, 20px , Roboto, 0 , 35px );
+            padding-top: 20px;
+            @include maxTablet {
+                font-size: 20px;
+            }
+            @include maxMobile {
+                font-size: 19px;
+            }
+        }
+    }
+    .content-sec{
+        margin-bottom: 35px;
+        .title{
+            @include text($SecColor, 30px , Roboto, 0 , 35px , bold);
+            margin: 0;
+            @include maxTablet {
+                font-size: 22px;
+                line-height: 25px;
+            }
+            @include maxMobile {
+                line-height: 35px;
+            }
+        }
+        .body{
+            @include text($SecColor, 18px , Roboto, 0 , 30px );
+            padding-top: 20px;
+            line-height: 30px;
+            @include maxTablet {
+                font-size: 18px;
+            }
+        }
+    }
+    .other-titles{
+        margin-bottom: 260px;
+        @include maxTablet {
+            margin-bottom: 150px;
+        }
+        .title{
+            
+            margin-bottom: 14px;
+            display: flex;
+            justify-content: flex-start ;
+            align-items: center;
+            @include maxTablet {
+                align-items: unset;
+                
+            }
+            img{
+                height: 24px;
+                width: 24px;
+            }
+            span{
+                @include text($SecColor, 20px , Roboto, 0 , 31px , bold);
+                padding-left: 12px;
+                @include maxTablet {
+                    font-size: 18px;
+                }
+                @include maxMobile {
+                    font-size: 17px;
+                    margin-top: -5px;
+                }
+            }
         }
     }
 }

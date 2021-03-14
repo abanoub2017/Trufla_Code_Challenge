@@ -466,4 +466,150 @@
   }
 }
 
+.fqa {
+  padding-left: 156px;
+  padding-right: 156px;
+}
+@media (max-width: 991px) {
+  .fqa {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+}
+@media (max-width: 767px) {
+  .fqa {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.fqa .content-one {
+  margin-top: 79px;
+  margin-bottom: 91px;
+}
+@media (max-width: 767px) {
+  .fqa .content-one {
+    margin-top: 50px;
+    margin-bottom: 71px;
+  }
+}
+.fqa .content-one .title {
+  color: #42415B;
+  font-size: 38px;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 48px;
+  letter-spacing: 0;
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .fqa .content-one .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .fqa .content-one .title {
+    font-size: 28px;
+  }
+}
+.fqa .content-one .body {
+  color: #170307;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: Roboto;
+  line-height: 35px;
+  letter-spacing: 0;
+  padding-top: 20px;
+}
+@media (max-width: 991px) {
+  .fqa .content-one .body {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .fqa .content-one .body {
+    font-size: 19px;
+  }
+}
+.fqa .content-sec {
+  margin-bottom: 35px;
+}
+.fqa .content-sec .title {
+  color: #42415B;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 35px;
+  letter-spacing: 0;
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .fqa .content-sec .title {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .fqa .content-sec .title {
+    line-height: 35px;
+  }
+}
+.fqa .content-sec .body {
+  color: #42415B;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: Roboto;
+  line-height: 30px;
+  letter-spacing: 0;
+  padding-top: 20px;
+  line-height: 30px;
+}
+@media (max-width: 991px) {
+  .fqa .content-sec .body {
+    font-size: 18px;
+  }
+}
+.fqa .other-titles {
+  margin-bottom: 260px;
+}
+@media (max-width: 991px) {
+  .fqa .other-titles {
+    margin-bottom: 150px;
+  }
+}
+.fqa .other-titles .title {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .fqa .other-titles .title {
+    align-items: unset;
+  }
+}
+.fqa .other-titles .title img {
+  height: 24px;
+  width: 24px;
+}
+.fqa .other-titles .title span {
+  color: #42415B;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 31px;
+  letter-spacing: 0;
+  padding-left: 12px;
+}
+@media (max-width: 991px) {
+  .fqa .other-titles .title span {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .fqa .other-titles .title span {
+    font-size: 17px;
+    margin-top: -5px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
