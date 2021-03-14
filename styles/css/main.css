@@ -21,8 +21,8 @@
 /*
 **  Main header links Style Mixin For Help 
 */
-.overflow-x-hidden {
-  overflow-x: hidden;
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .top-header {
