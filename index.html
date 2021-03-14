@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" href="./styles/css/bootstrap.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="./styles/css/main.css">
+</head>
+
+<body>
+
+    <!-- Top Header -->
+    <div class="top-header py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 col-sm-6 col-6">
+                    <!-- Side menu -->
+                    <div class="side-menu" >
+                        <div class="icon d-inline">
+                            <img onclick="toggleMenu()" src="./images/icons/side-menu.png" alt="side menu" height="45" width="45">
+                        </div>
+                        <!-- Side menu Items -->
+                        <div class="side-menu-item hiden-menu" id="sideMenuItem">
+                            <ul class="list-unstyled ">
+                                <li class="drop-dwon">
+                                    <div class="drop-dwon-title d-flex justify-content-between" onclick="toggelDropDwon()" >
+                                        <p>Coverage</p>
+                                        <img src="./images/icons/drop-dwon.png" height="10"  width="10" alt="drop dwon">
+                                    </div>
+                                    <ul class="drop-dwon-content  list-unstyled p-0" id="dropDwonContent">
+                                            <li><a href="#">Product 1</a></li>
+                                            <li><a href="#">Product 2</a></li>
+                                            <li><a href="#">Product 3</a></li>
+                                            <li><a href="#">Product 4</a></li>
+                                            <li><a href="#">Product 5</a></li>
+                                    </ul>
+
+                                </li>
+                                <li><a href="#">About us</a> </li>
+                                <li><a href="">FAQ</a> </li>
+                                <li> <a href="">Blog</a> </li>
+                                <li> <a href="">Contact us</a>  </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Logo -->
+                    <img src="https://logos.flamingtext.com/Word-Logos/test-design-china-name.png" alt="logo" height="45">
+                </div>
+                <!-- Quick Info -->
+                <div class="col-md-7 col-sm-6 col-6">
+                    <div class=" info d-flex justify-content-lg-around justify-content-md-end justify-content-end align-items-center">
+                        <p>PAYMENTS</p>
+                        <p>CLAIM ASSISTANCE</p>
+                        <p class="p-2" id="contact">
+                            <img src="./images/icons/phone.webp"  width="20" height="20" alt="phone">
+                            <span>555-555-555</span>
+                        </p>
+                        <div id="qoute">
+                            <button class="btn"> <span>GET A</span> QUOTE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Header  -->
+    <div class="main-header">
+        <div class="container">
+            <ul class="list-unstyled">
+                <li> <a href="#">Coverage</a> </li>
+                <li> <a href="#">About Us</a> </li>
+                <li> <a href="#">FAQ</a> </li>
+                <li> <a href="#">Blog</a> </li>
+                <li> <a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Products -->
+    <div class="prouducts">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg col-md-4  ">
+                    <div class="card  my-2">
+                        Products
+                    </div>
+                </div>
+                <div class="col-lg col-md-4 ">
+                    <div class="card  my-2">
+                        Products
+                    </div>
+                </div>
+                <div class="col-lg col-md-4 ">
+                    <div class="card  my-2">
+                        Products
+                    </div>
+                </div>
+                <div class="col-lg col-md-4 ">
+                    <div class="card  my-2">
+                        Products
+                    </div>
+                </div>
+                <div class="col-lg col-md-4 ">
+                    <div class="card  my-2">
+                        Products
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Main  -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+.top-header {
+    p {
+        margin: 0;
+
+        span {
+            @include maxMobile {
+                display: none;
+            }
+        }
+    }
+
+    .info :is(p:first-child, p:nth-child(2)) {
+        @include maxTablet {
+            display: none;
+        }
+    }
+
+    div {
+        .btn {
+            background-color: $primaryBgColor;
+            color: $whiteColor;
+            padding: 10px 15px;
+        }
+
+        span {
+            @include maxMobile {
+                display: none;
+            }
+        }
+    }
+
+    .side-menu {
+        position: relative;
+        display: none;
+
+        @include maxTablet {
+            display: inline;
+        }
+
+        .side-menu-item {
+            position: fixed;
+            top: 78px;
+            left: 0;
+            background-color: $whiteColor;
+            color: $menuItemColor;
+            height: 100%;
+            width: 100%;
+            z-index: 999;
+            padding: 15px;
+            transform: translate(0);
+            transition: all .3s ease-in-out;
+            .drop-dwon-content{
+                display: none;
+                li{
+                    border: none;
+                    padding: 10px 0;
+                    a{
+                        color:#9da0b4;
+                        font-size: 15px;
+                    }
+                }
+            }
+            ul {
+                li{
+                    border-bottom: 1px solid #ccc;
+                    padding: 15px 0;
+                    font-size: 17px;
+                    text-transform: capitalize;
+                    a{
+                        text-decoration: none;
+                        color: $menuItemColor;
+                    }
+                }
+            }
+        }
+
+        .hiden-menu {
+            transform: translate(-100%);
+            -webkit-transform: translate(-100%);
+            -moz-transform: translate(-100%);
+            -ms-transform: translate(-100%);
+            -o-transform: translate(-100%);
+}
+
+    }
+}
+
+
+.main-header {
+    background-color: #ccc;
+
+    ul {
+        text-align: center;
+
+        li {
+            display: inline-block;
+            padding: 15px 3rem;
+            font-size: 18px;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    @include maxTablet {
+        display: none;
+    }
+}
