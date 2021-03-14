@@ -136,6 +136,7 @@
 .top-header .side-menu .side-menu-item {
   position: fixed;
   top: 78px;
+  transform: translateZ(42px);
   left: 0;
   background-color: #Fff;
   color: #42415B;

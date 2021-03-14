@@ -48,6 +48,7 @@
  @mixin SideMenu {
     position: fixed;
     top: 78px;
+    transform: translateZ(42px);
     @include maxMobile {
        top: 47.5px;
     }
