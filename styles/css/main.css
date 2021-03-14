@@ -136,7 +136,6 @@
 .top-header .side-menu .side-menu-item {
   position: fixed;
   top: 78px;
-  transform: translateZ(42px);
   left: 0;
   background-color: #Fff;
   color: #42415B;
@@ -144,11 +143,11 @@
   width: 100%;
   z-index: 999;
   padding: 15px;
-  -webkit-transform: translate(0);
-  -moz-transform: translate(0);
-  -o-transform: translate(0);
-  -ms-transform: translate(0);
-  transform: translate(0);
+  -webkit-transform: translate(0) translateZ(200px);
+  -moz-transform: translate(0) translateZ(200px);
+  -o-transform: translate(0) translateZ(200px);
+  -ms-transform: translate(0) translateZ(200px);
+  transform: translate(0) translateZ(200px);
   transition: all 0.3s ease-in-out;
   overflow-y: scroll;
 }

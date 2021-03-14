@@ -48,7 +48,6 @@
  @mixin SideMenu {
     position: fixed;
     top: 78px;
-    transform: translateZ(42px);
     @include maxMobile {
        top: 47.5px;
     }
@@ -59,8 +58,7 @@
     width: 100%;
     z-index: 999;
     padding: 15px;
-    // transform: translate(0);
-    @include prefixer(transform, translate(0) , webkit moz o ms) ;
+    @include prefixer(transform, translate(0)  translateZ(200px) , webkit moz o ms) ;
     transition: all .3s ease-in-out;
     overflow-y: scroll;
      @content;
