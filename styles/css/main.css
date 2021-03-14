@@ -1,9 +1,34 @@
-.top-header p {
-  margin: 0;
+/*
+ ** Media Query Mixin For Help 
+ */
+/*
+** Perfixes Mixin
+** Auto Add Perfixes To Properties
+*/
+/*
+ ** links Style Mixin For Help 
+ */
+/*
+ **  side menu Style Mixin For Help 
+ */
+/*
+** links for side menu Style Mixin For Help 
+*/
+/*
+** links for dropdwon Style Mixin For Help 
+*/
+.top-header {
+  padding: 15px 0;
 }
 @media (max-width: 767px) {
-  .top-header p span {
-    display: none;
+  .top-header {
+    padding: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .top-header .logo {
+    height: 27px;
+    width: 75px;
   }
 }
 @media (max-width: 991px) {
@@ -11,23 +36,97 @@
     display: none;
   }
 }
-.top-header div .btn {
-  background-color: #f1a153;
+@media (max-width: 767px) {
+  .top-header .info img {
+    height: 18px;
+    width: 18px;
+  }
+}
+.top-header .info div .btn {
+  padding: 16px 29px;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #F1A153;
   color: #Fff;
-  padding: 10px 15px;
+}
+@media (max-width: 991px) {
+  .top-header .info div .btn {
+    margin-left: 28px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
 }
 @media (max-width: 767px) {
-  .top-header div span {
+  .top-header .info div .btn {
+    font-size: 12px;
+    margin-left: 13px;
+    border-radius: 2px;
+    padding: 7px 10px;
+  }
+}
+.top-header .info div .btn span {
+  color: #Fff;
+}
+@media (max-width: 991px) {
+  .top-header .info div .btn span {
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+}
+.top-header .info div span {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #42415B;
+}
+@media (max-width: 767px) {
+  .top-header .info div span {
     display: none;
   }
 }
+.top-header .info p {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #42415B;
+}
 .top-header .side-menu {
   position: relative;
+  margin-right: 24px;
   display: none;
+}
+@media (max-width: 767px) {
+  .top-header .side-menu {
+    margin-right: 16px;
+  }
 }
 @media (max-width: 991px) {
   .top-header .side-menu {
     display: inline;
+  }
+}
+.top-header .side-menu .icon {
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .top-header .side-menu .icon img {
+    height: 18px;
+    width: 26px;
   }
 }
 .top-header .side-menu .side-menu-item {
@@ -35,41 +134,97 @@
   top: 78px;
   left: 0;
   background-color: #Fff;
-  color: #42415b;
-  height: 100%;
+  color: #42415B;
+  height: calc(100vh - 50px);
   width: 100%;
   z-index: 999;
   padding: 15px;
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  -o-transform: translate(0);
+  -ms-transform: translate(0);
   transform: translate(0);
   transition: all 0.3s ease-in-out;
+  overflow-y: scroll;
 }
-.top-header .side-menu .side-menu-item .drop-dwon-content {
+@media (max-width: 767px) {
+  .top-header .side-menu .side-menu-item {
+    top: 47.5px;
+  }
+}
+.top-header .side-menu .side-menu-item .drop-dwon .drop-dwon-title {
+  display: inline-block;
+  color: #42415B;
+  font-family: Roboto;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 20px;
+  cursor: pointer;
+}
+.top-header .side-menu .side-menu-item .drop-dwon .drop-dwon-content {
   display: none;
 }
-.top-header .side-menu .side-menu-item .drop-dwon-content li {
+.top-header .side-menu .side-menu-item .drop-dwon .drop-dwon-content li {
   border: none;
   padding: 10px 0;
 }
-.top-header .side-menu .side-menu-item .drop-dwon-content li a {
-  color: #9da0b4;
-  font-size: 15px;
+.top-header .side-menu .side-menu-item .drop-dwon .drop-dwon-content li:first-child {
+  padding-top: 18px;
+}
+.top-header .side-menu .side-menu-item .drop-dwon .drop-dwon-content li a {
+  color: #7C809B;
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-transform: capitalize;
 }
 .top-header .side-menu .side-menu-item ul li {
-  border-bottom: 1px solid #ccc;
-  padding: 15px 0;
-  font-size: 17px;
-  text-transform: capitalize;
+  border-bottom: 1px solid #BBBED0;
+  padding: 21px 0;
 }
 .top-header .side-menu .side-menu-item ul li a {
   text-decoration: none;
-  color: #42415b;
+  color: #42415B;
+  font-family: Roboto;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+.top-header .side-menu .side-menu-item .side-menu-info {
+  text-align: center;
+  padding-top: 20px;
+}
+.top-header .side-menu .side-menu-item .side-menu-info p,
+.top-header .side-menu .side-menu-item .side-menu-info div {
+  margin: 0;
+  padding: 13px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.top-header .side-menu .side-menu-item .side-menu-info .btn {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #F1A153;
+  color: #Fff;
+  padding: 16px 29px;
 }
 .top-header .side-menu .hiden-menu {
-  transform: translate(-100%);
   -webkit-transform: translate(-100%);
   -moz-transform: translate(-100%);
-  -ms-transform: translate(-100%);
   -o-transform: translate(-100%);
+  -ms-transform: translate(-100%);
+  transform: translate(-100%);
 }
 
 .main-header {
@@ -94,6 +249,34 @@
   }
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Black.woff2") format("woff2"), url("../../fonts/Roboto-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Medium.woff2") format("woff2"), url("../../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Regular.woff2") format("woff2"), url("../../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 .row .card {
   text-align: center;
 }

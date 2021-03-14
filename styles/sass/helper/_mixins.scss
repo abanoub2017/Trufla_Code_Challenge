@@ -1,3 +1,6 @@
+/*
+ ** Media Query Mixin For Help 
+ */
 
 @mixin maxTablet {
     @media (max-width:991px) {
@@ -10,3 +13,84 @@
         @content;
     }
 }
+
+ /*
+ ** Perfixes Mixin
+ ** Auto Add Perfixes To Properties
+ */
+
+ @mixin prefixer($property , $value, $prefixes : ()) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property} : $value;
+}
+
+
+/*
+ ** links Style Mixin For Help 
+ */
+
+ @mixin links {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+     @content;
+ }
+
+/*
+ **  side menu Style Mixin For Help 
+ */
+
+ @mixin SideMenu {
+    position: fixed;
+    top: 78px;
+    @include maxMobile {
+       top: 47.5px;
+    }
+    left: 0;
+    background-color: $whiteColor;
+    color: $SecColor;
+    height: calc(100vh - 50px);
+    width: 100%;
+    z-index: 999;
+    padding: 15px;
+    // transform: translate(0);
+    @include prefixer(transform, translate(0) , webkit moz o ms) ;
+    transition: all .3s ease-in-out;
+    overflow-y: scroll;
+     @content;
+ }
+
+ /*
+ ** links for side menu Style Mixin For Help 
+ */
+
+ @mixin linkSideMenu {
+    color: $SecColor;
+    font-family: Roboto;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 20px;
+     @content;
+ }
+
+
+ /*
+ ** links for dropdwon Style Mixin For Help 
+ */
+
+ @mixin linkDeopdwon {
+    color: $grayColor;
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19px;
+    text-transform: capitalize;
+     @content;
+ }
+

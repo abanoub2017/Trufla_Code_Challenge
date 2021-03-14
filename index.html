@@ -3,6 +3,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> //optimize your webpage for smaller screens
+    <meta name="author" content="Abanoub George">
+    <meta name="description" content="Articles on frontend development written by Abanoub George, Frontend Developer"> //included in search results to concisely summarize page content.
+    <meta name="keywords" content="HTML, CSS, JavaScript, Frontend, Web Development">
+    <!-- Facebook, Whatsapp -->
+    <meta property="og:site_name" content="Abanoub George">
+    <meta property="og:title" content="Abanoub George's Personal website and Blog">
+    <meta property="og:description" content="Articles on frontend development written by Abanoub George, Frontend Developer">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https//www.facebook.com">
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Abanoub George's Personal website and Blog">
+    <meta name="twitter:description" content="Articles on frontend development written by Abanoub George, Frontend Developer">
+    <meta name="twitter:image" content="logo.png">
+    <meta property="twitter:url" content="https//www.twitter.com">
+    <meta name="twitter:card" content="summary">
     <!-- Bootstrap Style -->
     <link rel="stylesheet" href="./styles/css/bootstrap.min.css">
     <!-- Main Style -->
@@ -12,53 +29,70 @@
 <body>
 
     <!-- Top Header -->
-    <div class="top-header py-3">
+    <div class="top-header">
         <div class="container">
             <div class="row align-items-center">
+                <!-- Logo and Menu Mobile -->
                 <div class="col-md-5 col-sm-6 col-6">
                     <!-- Side menu -->
-                    <div class="side-menu" >
+                    <div class="side-menu">
                         <div class="icon d-inline">
-                            <img onclick="toggleMenu()" src="./images/icons/side-menu.png" alt="side menu" height="45" width="45">
+                            <img onclick="toggleMenu()" src="./images/icons/Menu.svg" alt="side menu">
                         </div>
                         <!-- Side menu Items -->
                         <div class="side-menu-item hiden-menu" id="sideMenuItem">
                             <ul class="list-unstyled ">
+                                <!-- Drop Dwon -->
                                 <li class="drop-dwon">
-                                    <div class="drop-dwon-title d-flex justify-content-between" onclick="toggelDropDwon()" >
-                                        <p>Coverage</p>
-                                        <img src="./images/icons/drop-dwon.png" height="10"  width="10" alt="drop dwon">
+                                    <div class="drop-dwon-title d-flex justify-content-between"
+                                        onclick="toggelDropDwon()">
+                                        Coverage
+                                        <img src="./images/icons/drop-dwon.svg" height="10" width="10" alt="drop dwon">
                                     </div>
                                     <ul class="drop-dwon-content  list-unstyled p-0" id="dropDwonContent">
-                                            <li><a href="#">Product 1</a></li>
-                                            <li><a href="#">Product 2</a></li>
-                                            <li><a href="#">Product 3</a></li>
-                                            <li><a href="#">Product 4</a></li>
-                                            <li><a href="#">Product 5</a></li>
+                                        <li><a href="#">Product 1</a></li>
+                                        <li><a href="#">Product 2</a></li>
+                                        <li><a href="#">Product 3</a></li>
+                                        <li><a href="#">Product 4</a></li>
+                                        <li><a href="#">Product 5</a></li>
                                     </ul>
 
                                 </li>
+                                <!-- Links -->
                                 <li><a href="#">About us</a> </li>
                                 <li><a href="">FAQ</a> </li>
                                 <li> <a href="">Blog</a> </li>
-                                <li> <a href="">Contact us</a>  </li>
+                                <li> <a href="">Contact us</a> </li>
                             </ul>
+                            <!-- Side menu Quick Info -->
+                            <div class="side-menu-info">
+                                <p>PAYMENTS</p>
+                                <p>CLAIM ASSISTANCE</p>
+                                <div>
+                                    <img src="./images/icons/phone.svg"  alt="phone">
+                                    <span>555-555-555</span>
+                                </div>
+                                <div>
+                                    <button class="btn"> GET A  QUOTE</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Logo -->
-                    <img src="https://logos.flamingtext.com/Word-Logos/test-design-china-name.png" alt="logo" height="45">
+                    <img class="logo" src="./images/logo.svg" alt="logo" >
                 </div>
                 <!-- Quick Info -->
                 <div class="col-md-7 col-sm-6 col-6">
-                    <div class=" info d-flex justify-content-lg-around justify-content-md-end justify-content-end align-items-center">
-                        <p>PAYMENTS</p>
-                        <p>CLAIM ASSISTANCE</p>
-                        <p class="p-2" id="contact">
-                            <img src="./images/icons/phone.webp"  width="20" height="20" alt="phone">
-                            <span>555-555-555</span>
-                        </p>
+                    <div
+                        class=" info d-flex justify-content-lg-around justify-content-md-end justify-content-end align-items-center">
+                        <p>Payments</p>
+                        <p>Claims Assistance</p>
+                        <div id="contact">
+                            <img src="./images/icons/phone.svg"  alt="phone">
+                            <span>555-555-5555</span>
+                        </div>
                         <div id="qoute">
-                            <button class="btn"> <span>GET A</span> QUOTE</button>
+                            <button class="btn"> <span>Get a</span> Quote</button>
                         </div>
                     </div>
                 </div>
