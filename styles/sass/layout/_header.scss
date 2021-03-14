@@ -16,6 +16,9 @@
         @include maxTablet {
             display: none;
         }
+        @include maxMobile {
+            display: none;
+        }
     }
 
     .info {
