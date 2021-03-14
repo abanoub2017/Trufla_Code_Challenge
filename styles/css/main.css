@@ -109,12 +109,12 @@
   color: #42415B;
 }
 @media (max-width: 991px) {
-  .top-header .info p:first-child, .top-header .info p p:nth-child(2) {
+  .top-header .info p:first-child, .top-header .info p:nth-child(2) {
     display: none;
   }
 }
 @media (max-width: 767px) {
-  .top-header .info p:first-child, .top-header .info p p:nth-child(2) {
+  .top-header .info p:first-child, .top-header .info p:nth-child(2) {
     display: none;
   }
 }
