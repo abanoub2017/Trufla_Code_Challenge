@@ -21,6 +21,10 @@
 /*
 **  Main header links Style Mixin For Help 
 */
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .top-header {
   padding: 15px 0;
 }

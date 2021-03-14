@@ -10,6 +10,7 @@ function toggleMenu(){
     sideMenu.classList.toggle('hiden-menu')
     contact.classList.toggle('d-none')
     qoute.classList.toggle('d-none')
+    document.getElementsByTagName('body').classList.toggle('overflow-x-hidden')
 }
 
 // Toggel Drop Dwon
