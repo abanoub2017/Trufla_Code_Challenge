@@ -8,3 +8,9 @@ This project is Task  Trufla Code Challenge , The design is very cool and has sm
 * DropDwon in Menu Mobile , i ues the Js and Animation
 * Section Product has the different desgin in each screen
 	
+## Bonus
+* Include any build scripts used in the task, ues Js to made the Derpdwon and Menu
+* Provide documentation of cross-browser testing.
+* Add SEO and Lighthouse optimizations, Ues meta tags and the syntax 
+
+![Algorithm schema](./images/seo.png)
