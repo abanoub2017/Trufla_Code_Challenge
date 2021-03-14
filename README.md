@@ -13,4 +13,4 @@ This project is Task  Trufla Code Challenge , The design is very cool and has sm
 * Provide documentation of cross-browser testing.
 * Add SEO and Lighthouse optimizations, Ues meta tags and the syntax 
 
-![Algorithm schema](./images/seo.png)
+![SEO](./images/seo.png)
