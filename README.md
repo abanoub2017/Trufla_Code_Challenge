@@ -14,3 +14,7 @@ This project is Task  Trufla Code Challenge , The design is very cool and has sm
 * Add SEO and Lighthouse optimizations, Ues meta tags and the syntax 
 
 ![SEO](./images/seo.png)
+
+
+## Demo Link
+* https://abanoub2017.github.io/Trufla_Code_Challenge/index.html
