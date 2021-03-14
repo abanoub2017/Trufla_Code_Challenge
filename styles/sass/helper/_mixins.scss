@@ -26,7 +26,6 @@
     #{$property} : $value;
 }
 
-
 /*
  ** links Style Mixin For Help 
  */
@@ -84,7 +83,7 @@
  ** links for dropdwon Style Mixin For Help 
  */
 
- @mixin linkDeopdwon {
+ @mixin linkDropdwon {
     color: $grayColor;
     font-family: Roboto;
     font-size: 14px;
@@ -94,3 +93,35 @@
      @content;
  }
 
+ /*
+ **  Main header links Style Mixin For Help 
+ */
+
+ @mixin MainHeaderlink {
+    text-decoration: none;
+    color: $whiteColor;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
+ }
+
+// Global Style Text
+ @mixin text(
+  $color,
+  $size,
+  $family: inherit,
+  $letter-spacing: normal,
+  $line-height,
+  $weight : normal,
+) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}

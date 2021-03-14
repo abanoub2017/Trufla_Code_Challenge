@@ -1,3 +1,4 @@
+/* Colors */
 /*
  ** Media Query Mixin For Help 
  */
@@ -16,6 +17,9 @@
 */
 /*
 ** links for dropdwon Style Mixin For Help 
+*/
+/*
+**  Main header links Style Mixin For Help 
 */
 .top-header {
   padding: 15px 0;
@@ -228,20 +232,27 @@
 }
 
 .main-header {
-  background-color: #ccc;
+  background-color: #9CA2C6;
 }
 .main-header ul {
   text-align: center;
+  margin: 0;
 }
 .main-header ul li {
   display: inline-block;
-  padding: 15px 3rem;
+  padding: 16px 3rem;
   font-size: 18px;
 }
 .main-header ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #Fff;
   text-transform: capitalize;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
 }
 @media (max-width: 991px) {
   .main-header {
@@ -277,8 +288,182 @@
   font-style: normal;
   font-display: swap;
 }
-.row .card {
+.wellcome {
+  background: url(../../images/slider-img.jpg) no-repeat center center;
+  background-size: cover;
+}
+.wellcome .content {
+  padding: 120px 0;
+}
+@media (max-width: 991px) {
+  .wellcome .content {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .wellcome .content {
+    padding: 30px 0 70px 0;
+  }
+}
+.wellcome .content .title {
+  color: #Fff;
+  font-size: 66px;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 80px;
+  letter-spacing: 0;
+}
+@media (max-width: 991px) {
+  .wellcome .content .title {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+.wellcome .content .sub-title {
+  color: #Fff;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: Roboto;
+  line-height: 30px;
+  letter-spacing: 0;
+  width: 43%;
+  padding-top: 16px;
+}
+@media (max-width: 991px) {
+  .wellcome .content .sub-title {
+    width: 91%;
+    margin: auto;
+  }
+}
+@media (max-width: 767px) {
+  .wellcome .content .sub-title {
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+  }
+}
+.wellcome .content .action {
+  padding-top: 64px;
+}
+.wellcome .content .action a {
+  color: #Fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Roboto;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-decoration: none;
+  padding: 18px 40px;
+  border-radius: 4px;
+  background-color: #F1A153;
   text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .wellcome .content .action a {
+    padding: 18px 76px;
+  }
+}
+
+.products {
+  background-color: #F2F3FC;
+  padding: 74px 0 77px;
+}
+@media (max-width: 991px) {
+  .products {
+    padding: 40px 0 69px;
+  }
+}
+@media (max-width: 767px) {
+  .products {
+    padding: 29px 0 43px;
+  }
+}
+.products .title {
+  color: #42415B;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 60px;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 46px;
+}
+@media (max-width: 991px) {
+  .products .title {
+    font-size: 30px;
+    margin-bottom: 37px;
+  }
+}
+@media (max-width: 767px) {
+  .products .title {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+}
+.products .card {
+  box-sizing: border-box;
+  border: 1px solid #BABDCF;
+  border-radius: 2px;
+  height: 183px;
+  width: 165px;
+  text-align: center;
+  margin: auto;
+}
+@media (max-width: 991px) {
+  .products .card {
+    height: 140px;
+    width: 210px;
+  }
+}
+@media (max-width: 767px) {
+  .products .card {
+    flex-direction: inherit;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: auto;
+    padding: 0 16px;
+  }
+}
+.products .card:hover {
+  background-color: #BABDCF;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.products .card:hover p {
+  color: #Fff;
+}
+.products .card .img {
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 991px) {
+  .products .card .img {
+    padding-top: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .products .card .img {
+    margin: 0;
+    padding-top: 0;
+  }
+}
+.products .card p {
+  color: #42415B;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Roboto;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  padding-top: 20px;
+}
+@media (max-width: 767px) {
+  .products .card p {
+    padding-left: 18px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

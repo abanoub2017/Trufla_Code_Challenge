@@ -1,48 +1,127 @@
 
-@font-face {
-    font-family: 'Roboto';
-    src: url('../../fonts/Roboto-Black.woff2') format('woff2'),
-        url('../../fonts/Roboto-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+// Wellcome
+.wellcome{
+    background: url(../../images/slider-img.jpg) no-repeat center center ;
+    background-size: cover;
+    // Content
+    .content{
+        padding: 120px 0;
+        @include maxTablet {
+            text-align: center;
+        }
+        @include maxMobile {
+            padding: 30px 0 70px 0;
+        }
+        .title{
+            @include text($whiteColor, 66px , Roboto, 0 , 80px , bold);
+            @include maxTablet {
+                font-size: 38px;
+                line-height: 48px;
+            }
+        }
+        .sub-title{
+            @include text($whiteColor, 18px , Roboto, 0 , 30px );
+            width: 43%;
+            padding-top: 16px;
+            @include maxTablet {
+                width: 91%;
+                margin: auto;
+            }
+            @include maxMobile {
+                width: 100%;
+                margin: auto;
+                font-size: 16px;
+            }
+        }
+        .action{
+            padding-top: 64px;
+            a{
+                @include text($whiteColor, 18px , Roboto, 0 , 24px  , 500);
+                text-decoration: none;
+                padding: 18px 40px;
+                border-radius: 4px;
+                background-color: $primaryColor;
+                text-align: center;
+                text-transform: uppercase;
+                @include maxMobile {
+                    padding: 18px 76px;
+                }
+            }
+        }
+    }
 }
 
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../../fonts/Roboto-Bold.woff2') format('woff2'),
-        url('../../fonts/Roboto-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../../fonts/Roboto-Medium.woff2') format('woff2'),
-        url('../../fonts/Roboto-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../../fonts/Roboto-Regular.woff2') format('woff2'),
-        url('../../fonts/Roboto-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-
-
-.row {
-    .card {
+// Products 
+.products {
+    background-color: $grayFourColor;
+    padding: 74px 0 77px;
+    @include maxTablet {
+        padding: 40px 0 69px;
+    }
+    @include maxMobile {
+        padding: 29px 0 43px;
+    }
+    .title{
+        @include text($SecColor, 50px , Roboto, 0 , 60px , bold);
         text-align: center;
+        margin-bottom: 46px;
+        @include maxTablet {
+            font-size: 30px;
+            margin-bottom: 37px;
+        }
+        @include maxMobile {
+            font-size: 30px;
+            margin-bottom: 16px;
+        }
+
+    }
+    .card {
+        box-sizing: border-box;
+        border: 1px solid $grayFiveColor;
+        border-radius: 2px;
+        height: 183px;
+        width: 165px;
+        text-align: center;
+        margin: auto;
+        @include maxTablet {
+            height: 140px;
+            width: 210px;
+        }
+        @include maxMobile {
+            flex-direction: inherit;
+            justify-content: flex-start;
+            align-items: center;
+            height: auto;
+            width: auto;
+            padding: 0 16px;
+        }
+        &:hover{
+            background-color: $grayFiveColor;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+            p{
+            color: $whiteColor;
+           }
+        }
+        .img{
+            padding-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            @include maxTablet {
+                padding-top: 36px;
+            }
+            @include maxMobile {
+                margin: 0;
+                padding-top: 0;
+            }
+        }
+        p{
+            @include text($SecColor, 16px , Roboto, 0 , 24px );
+            text-align: center;
+            padding-top: 20px;    
+            @include maxMobile {
+                padding-left:18px;
+            }      
+        }
     }
 }

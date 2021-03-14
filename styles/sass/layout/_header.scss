@@ -1,7 +1,6 @@
 // Top Header (iclude Side menu in Responsive)
 .top-header {
     padding: 15px 0;
-
     @include maxMobile {
         padding: 10px;
     }
@@ -39,7 +38,7 @@
                 }
 
                 @include links {
-                    background-color: $primaryBgColor;
+                    background-color: $primaryColor;
                     color: $whiteColor;
                 }
 
@@ -79,24 +78,19 @@
             }
         }
     }
-
+    // Side menu 
     .side-menu {
         position: relative;
         margin-right: 24px;
         display: none;
-
         @include maxMobile {
             margin-right: 16px;
-
         }
-
         @include maxTablet {
             display: inline;
         }
-
         .icon {
             cursor: pointer;
-
             img {
                 @include maxMobile {
                     height: 18px;
@@ -104,21 +98,16 @@
                 }
             }
         }
-
         .side-menu-item {
             @include SideMenu;
-
             .drop-dwon {
                 .drop-dwon-title {
                     display: inline-block;
                     @include linkSideMenu;
                     cursor: pointer;
-
                 }
-
                 .drop-dwon-content {
                     display: none;
-
                     li {
                         border: none;
                         padding: 10px 0;
@@ -128,7 +117,7 @@
                         }
 
                         a {
-                            @include linkDeopdwon;
+                            @include linkDropdwon;
                         }
                     }
                 }
@@ -159,37 +148,31 @@
 
                 .btn {
                     @include links {
-                        background-color: $primaryBgColor;
+                        background-color: $primaryColor;
                         color: $whiteColor;
                         padding: 16px 29px;
                     }
                 }
             }
         }
-
         .hiden-menu {
             @include prefixer(transform, translate(-100%), webkit moz o ms)
         }
-
     }
 }
 
 // Main Header
 .main-header {
-    background-color: #ccc;
-
+    background-color: $grayTherdColor;
     ul {
         text-align: center;
-
+        margin: 0;
         li {
             display: inline-block;
-            padding: 15px 3rem;
+            padding: 16px 3rem;
             font-size: 18px;
-
             a {
-                text-decoration: none;
-                color: #fff;
-                text-transform: capitalize;
+                @include MainHeaderlink;
             }
         }
     }
